@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+.main_cont {
+    height: auto;
+}
+
+.top_header {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    height: auto;
+    font-size: 13px;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+.big_cont {
+    height: auto;
+}
+
+.small_cont {
+    height: auto;
+}
+
+#logo {
+    width: 137px;
+    height: 100%;
+    padding: 16px 6px 16px 10px;
+}
+
+#img_logo {
+    width: 108px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-grow: 3;
+    height: 55px;
+    font-size: 13px;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.navigation ul li{
+    display: inline-block;
+    height: 100%;
+}
+
+ul li a {
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    padding: 20px 8px 10px 8px;
+    margin: 1px 0;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;;
+    height: 55px;
+    font-size: 13px;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: rgb(40, 40, 40);
+}
+
+.select {
+    display: flex;
+    flex-direction: row;;
+}
+
+.search_icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 20px 16px 15px;;
+}
+
+#img_icon {
+    width: 16px;
+    margin-left: 5px;
+}
+
+#user_img {
+    width: 32px;
+    margin-left: 5px;
+}
+
+.inter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 20px 16px 15px;;
+}
+
+select {
+    border: none;
+    height: 100%;
+    padding: 16px 20px 16px 15px;
+}
+
+.big_part {
+    padding-left: 5%;
+    padding-right: 5%;
+
+}
+
+#back_img {
+    width: 100%;
+}
+
+.some_text {
+    width: 88%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.products {
+    height: 500px;
+    background-image: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4DRie?ver=f61d&q=0&m=8&h=600&w=1600&b=%23FFFFFFFF&l=f&x=0&y=0&s=1898&d=712&aim=true);
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.btns a {
+    margin-top: 10px;
+    padding: 8px 20px;
+    border: none;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#btn1 {
+    color: white;
+    background-color: black;
+}
+
+
+#btn2 {
+    color: black;
+}
+
+.other {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0;
+}
+
+li div img {
+    width: 280px;
+}
+
+li div h3 {
+    font-size: 20px;
+}
+
+.UL {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.UL li {
+    width: 280px;
+    margin: 20px 20px;
+}
+
+li div p {
+    font-size: 16px;
+}
+
+li div a {
+    font-weight: 800;
+    padding: 0;
+    font-size: 14px;
+    color: rgb(0, 80, 160);
+}
+
+.text_image h1 {
+    font-size: 36px;
+}
+
+.text_image p {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+
+
