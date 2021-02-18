@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO list</title>
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    <header class="hdr">ToDo List</header>
+    <div class="container">
+        <div class="to-do">
+            <h1>ToDo List</h1>
+            <div class="new_task">
+                <input type="text" placeholder="New task">
+                <button id="btn">Add</button>
+            </div>
+            <div class="tasks">
+                <ul class="task_list"></ul>
+                <div class="notasks">
+                    <h2>No tasks </h2>
+                    <img src="https://images.vexels.com/media/users/3/129762/isolated/preview/b8013d3077f62d29bce2664db694246b-check-flat-icon-by-vexels.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <template id="task_temp">
+        <li class="task">
+            <input type="checkbox" class="box-in"> 
+            <span id="name">Template</span>
+            <button id="delete-btn" class="del-btn"></button>
+
+        </li>
+    </template>
+    <script src="static/js/index.js"></script>
+</body>
+</html>
