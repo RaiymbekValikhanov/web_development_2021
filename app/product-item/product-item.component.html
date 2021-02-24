@@ -1,0 +1,15 @@
+<h3>
+    <img *ngIf="product.description" [src]="product.img">
+    <div class="text">
+    <a [title]="product.name + ' details'" href="{{product.link}}" target="_black">
+      {{ product.name }}
+    </a>
+    <p *ngIf="product.description">
+    Description: {{ product.description }}
+    </p>
+    <p *ngIf="product.rating" class="rating">
+    Rating: {{ product.rating }} / 5;
+    </p>
+    </div>
+
+</h3>
