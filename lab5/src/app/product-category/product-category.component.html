@@ -1,0 +1,13 @@
+<h3>
+  Categories
+</h3>
+
+<div *ngFor="let category of categories">
+<!--  <p> {{category.name}} </p>-->
+<!--  <app-product-list [products]="category.products"></app-product-list>-->
+  <div class="category">
+    <a [routerLink]="[category.name]"> {{ category.name }} </a>
+  </div>
+</div>
+
+

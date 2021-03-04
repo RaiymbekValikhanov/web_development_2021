@@ -1,0 +1,9 @@
+<h2>{{category.name}}</h2>
+
+<div *ngFor="let product of products" >
+  <app-product-item *ngIf="!product.hidden" [product]="product"></app-product-item>
+  <app-product-alerts
+  [product]="product"
+  (notify)="onNotify()">
+</app-product-alerts>
+</div>

@@ -1,0 +1,31 @@
+<h3>
+  <div class="item">
+  <img *ngIf="product.description" [src]="product.img">
+
+    <div class="text">
+      <a [title]="product.name + ' details'" href="{{product.link}}" target="_black">
+        {{ product.name }}
+      </a>
+      <p *ngIf="product.description">
+        Description: {{ product.description }}
+      </p>
+      <p *ngIf="product.rating" class="rating">
+        Rating: {{ product.rating }} / 5
+      </p>
+      <p>
+        Likes: {{ product.likes }}
+      </p>
+      <button class="like_button" [ngClass]="{'btn-liked': product.liked,
+        'btn-not-liked': !product.liked}" (click)="like(product)">
+        <img class="like" src="https://www.clker.com/cliparts/c/o/L/M/k/W/white-heart-md.png">
+      </button>
+    </div>
+  </div>
+</h3>
+
+<button (click)="share(product.link)">
+  Share
+</button>
+<button class="remove" (click)="product.hidden = true">
+  Hide
+</button>
