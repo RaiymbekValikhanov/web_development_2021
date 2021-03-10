@@ -1,0 +1,38 @@
+:host {
+  margin: 0;
+  font-family: Monaco;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.navigation-bar {
+  background: orange;
+  margin: 0;
+  padding: 0px 10px;
+}
+
+.navigation-bar ul {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navigation-bar ul li {
+  display: inline-block;
+  margin: 8px 10px;
+}
+
+.navigation-bar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+}
+
+.navigation-bar ul li a:hover {
+  background-color: white;
+  color: orange;
+}
+
+.container {
+  padding: 0 30px;
+}
