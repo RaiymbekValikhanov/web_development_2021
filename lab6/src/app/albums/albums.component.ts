@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import { AlbumsService } from '../albums.service';
+import { Album } from '../models';
 
 @Component({
   selector: 'app-albums',
@@ -7,15 +8,21 @@ import {HttpClient} from '@angular/common/http';
   styleUrls: ['./albums.component.css']
 })
 export class AlbumsComponent implements OnInit {
-  items: object = [];
+  albums: Album[] = [];
 
   constructor(
-    private http: HttpClient
-  ) { }
+    private albumService: AlbumsService,
+  ) {  }
 
   ngOnInit(): void {
-    const data = this.http.get('https://jsonplaceholder.typicode.com/albums');
-    console.log(data);
+    this.albumService.getAlbums().subscribe((albums) => {
+      this.albums = albums;
+    });
   }
-
+  deleteAlbum(id: number): void {
+    this.albums = this.albums.filter((album) => album.id !== id );
+    this.albumService.deleteAlbum(id).subscribe((albums) => {
+      console.log(albums);
+    });
+  }
 }

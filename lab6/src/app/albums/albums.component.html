@@ -1,3 +1,9 @@
-<ul>
-
+<p>Choose album</p>
+<ul *ngIf="albums">
+  <li class="album" *ngFor="let album of albums">
+    <a [routerLink]="['/albums', album.id]" >
+      {{album.id}}
+    </a>
+    <button (click)="deleteAlbum(album.id)">X</button>
+  </li>
 </ul>

@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {Location} from '@angular/common';
+import {AlbumsService} from '../albums.service';
+import {Photo} from '../models';
 
 @Component({
   selector: 'app-photos',
@@ -6,10 +10,26 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./photos.component.css']
 })
 export class PhotosComponent implements OnInit {
-
-  constructor() { }
+  photos: Photo[] = [];
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location,
+    private albumService: AlbumsService,
+  ) { }
 
   ngOnInit(): void {
+    this.route.paramMap.subscribe((params) => {
+      const id = params.get('id');
+      this.getPhoto(id);
+    });
+  }
+  getPhoto(id: string | null): void {
+    this.albumService.getPhotos(id).subscribe((photos) => {
+      this.photos = photos;
+    });
+  }
+  goBack(): void {
+    this.location.back();
   }
 
 }

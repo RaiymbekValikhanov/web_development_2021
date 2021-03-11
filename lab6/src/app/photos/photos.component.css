@@ -1,0 +1,36 @@
+.photos {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.photo {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+  border: solid 2px coral;
+  margin: 8px 0;
+  padding: 10px 8px;
+  border-radius: 5px;
+}
+
+.photo p {
+  margin: 0 0 5px 0;
+  text-align: center;
+}
+
+img {
+  width: 150px;
+}
+
+button {
+  background: cornflowerblue;
+  font-size: 20px;
+  margin: 10px 15px 0 0;
+  padding: 5px 15px;
+  border: solid 1px white;
+  color: white;
+  border-radius: 5px;
+}

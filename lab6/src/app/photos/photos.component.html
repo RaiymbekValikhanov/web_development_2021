@@ -1,1 +1,7 @@
-<p>photos works!</p>
+<button class="back" (click)="goBack()"><<</button>
+<div class="photos">
+  <div class="photo" *ngFor="let photo of photos">
+    <p> {{photo.id}}. {{photo.title}}</p>
+    <img src="{{photo.thumbnailUrl}}">
+  </div>
+</div>
